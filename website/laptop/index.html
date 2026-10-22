@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop Page - AWS Shopping Website</title>
+    <title>ShopZone | Laptop Deals</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #172033;
+        }
+        header {
+            background: #101d3a;
+            color: white;
+            padding: 20px 8%;
+        }
+        header a { color: white; margin-right: 20px; text-decoration: none; }
+        .hero {
+            text-align: center;
+            padding: 40px 15px;
+            background: #dbeafe;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            padding: 35px 8%;
+        }
+        .card {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #00000010;
+        }
+        .icon { font-size: 75px; }
+        .discount {
+            color: #15803d;
+            background: #dcfce7;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .old { text-decoration: line-through; color: gray; }
+        .price { font-size: 26px; color: #1d4ed8; font-weight: bold; }
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+    </style>
 </head>
 <body>
-    <h1>LAPTOP!!!</h1>
+
+<header>
+    <h2>💻 ShopZone Laptop Store</h2>
+    <a href="/">Home</a>
+    <a href="/laptop/">Laptops</a>
+    <a href="/cloth/">Clothing</a>
+</header>
+
+<section class="hero">
+    <h1>⚡ Laptop Mega Sale</h1>
+    <p>Upgrade your setup without breaking the bank.</p>
+</section>
+
+<section class="products">
+    <div class="card">
+        <div class="icon">💻</div>
+        <h2>Student Laptop</h2>
+        <p><span class="discount">20% OFF</span></p>
+        <p class="old">₹50,000</p>
+        <p class="price">₹40,000</p>
+        <p>Perfect for students and everyday tasks.</p>
+        <a class="btn" href="mailto:sales@example.com">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">🖥️</div>
+        <h2>Performance Laptop</h2>
+        <p><span class="discount">15% OFF</span></p>
+        <p class="old">₹80,000</p>
+        <p class="price">₹68,000</p>
+        <p>Great for coding and multitasking.</p>
+        <a class="btn" href="mailto:sales@example.com">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">🎮</div>
+        <h2>Gaming Laptop</h2>
+        <p><span class="discount">10% OFF</span></p>
+        <p class="old">₹1,00,000</p>
+        <p class="price">₹90,000</p>
+        <p>Powerful performance for gaming.</p>
+        <a class="btn" href="mailto:sales@example.com">Enquire Now</a>
+    </div>
+</section>
+
 </body>
 </html>
