@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloth Page - AWS Shopping Website</title>
+    <title>ShopZone | Fashion Sale</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff7f3;
+            color: #38231f;
+        }
+        header {
+            background: #49251f;
+            color: white;
+            padding: 20px 8%;
+        }
+        header a { color: white; margin-right: 20px; text-decoration: none; }
+        .hero {
+            text-align: center;
+            padding: 40px 15px;
+            background: #fbe1d5;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            padding: 35px 8%;
+        }
+        .card {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #00000010;
+        }
+        .icon { font-size: 75px; }
+        .discount {
+            color: #b42318;
+            background: #fee2e2;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .old { text-decoration: line-through; color: gray; }
+        .price { font-size: 26px; color: #a83224; font-weight: bold; }
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #a83224;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+    </style>
 </head>
 <body>
-    <h1>CLOTH!!!</h1>
+
+<header>
+    <h2>👕 ShopZone Fashion</h2>
+    <a href="/">Home</a>
+    <a href="/laptop/">Laptops</a>
+    <a href="/cloth/">Clothing</a>
+</header>
+
+<section class="hero">
+    <h1>🔥 Fashion Fiesta</h1>
+    <p>New looks. Great prices. Unmissable deals.</p>
+</section>
+
+<section class="products">
+    <div class="card">
+        <div class="icon">👕</div>
+        <h2>Casual T-Shirt</h2>
+        <p><span class="discount">30% OFF</span></p>
+        <p class="old">₹1,000</p>
+        <p class="price">₹700</p>
+        <p>Comfortable style for every day.</p>
+        <a class="btn" href="mailto:sales@example.com">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">👔</div>
+        <h2>Classic Shirt</h2>
+        <p><span class="discount">25% OFF</span></p>
+        <p class="old">₹2,000</p>
+        <p class="price">₹1,500</p>
+        <p>Smart fashion for work and outings.</p>
+        <a class="btn" href="mailto:sales@example.com">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">👗</div>
+        <h2>Style Collection</h2>
+        <p><span class="discount">20% OFF</span></p>
+        <p class="old">₹2,500</p>
+        <p class="price">₹2,000</p>
+        <p>Refresh your wardrobe with new styles.</p>
+        <a class="btn" href="mailto:sales@example.com">Enquire Now</a>
+    </div>
+</section>
+
 </body>
 </html>
